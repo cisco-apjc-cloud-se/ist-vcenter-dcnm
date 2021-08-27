@@ -32,5 +32,5 @@ module "vcenter" {
   vcenter_server      = var.vcenter_server
   vcenter_dc          = var.vcenter_dc
   vcenter_dvs         = var.vcenter_dvs
-  cluster_networks    = module.dcnm.networks
+  dcnm_networks       = module.dcnm.networks
 }

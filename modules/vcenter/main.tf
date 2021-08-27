@@ -29,7 +29,7 @@ data "vsphere_distributed_virtual_switch" "dvs" {
 
 ### Build New Distribute Port Group(s)
 resource "vsphere_distributed_port_group" "dpg" {
-  for_each                        = var.cluster_networks
+  for_each                        = var.dcnm_networks
 
   name                            = each.value.name
   distributed_virtual_switch_uuid = data.vsphere_distributed_virtual_switch.dvs.id

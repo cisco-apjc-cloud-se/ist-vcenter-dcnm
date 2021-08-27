@@ -20,6 +20,9 @@ variable "vcenter_dvs" {
   type = string
 }
 
+variable "dcnm_networks" {
+}
+
 ### Common Variables
 
 variable "cluster_networks" {
