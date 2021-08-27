@@ -51,7 +51,7 @@ locals {
 
 ## Build New L3 Networks ##
 
-resource "dcnm_network" "network" {
+resource "dcnm_network" "networks" {
   for_each = var.cluster_networks
 
   fabric_name     = var.dcnm_fabric
