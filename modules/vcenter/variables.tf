@@ -19,3 +19,16 @@ variable "vcenter_dc" {
 variable "vcenter_dvs" {
   type = string
 }
+
+### Common Variables
+
+variable "cluster_networks" {
+  type = map(object({
+    name = string
+    description = string
+    ip_subnet = string
+    vni_id = number
+    vlan_id = number
+    deploy = bool
+  }))
+}
