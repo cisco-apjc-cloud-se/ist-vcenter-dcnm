@@ -27,8 +27,8 @@ data "dcnm_inventory" "dc_switches" {
 
 ## Load Existing DCNM VRF ###
 data "dcnm_vrf" "dc_vrf" {
-  fabric_name = var.dc_fabric
-  name        = var.dc_vrf
+  fabric_name = var.dcnm_fabric
+  name        = var.dcnm_vrf
 }
 
 ## Build Local Dictionary of Switch Name -> Serial Number ###
