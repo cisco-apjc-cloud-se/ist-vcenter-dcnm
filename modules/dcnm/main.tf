@@ -78,6 +78,7 @@ resource "dcnm_network" "networks" {
   # rt_both_flag    = true
   # trm_enable_flag = true
   l3_gateway_flag = true
+  template        = "MODIFIED_Network_Universal"
   deploy          = each.value.deploy
 
   dynamic "attachments" {
