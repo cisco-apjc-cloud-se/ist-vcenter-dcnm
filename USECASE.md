@@ -57,7 +57,8 @@ In this example, both VLAN IDs and VXLAN IDs have been explicity set.  These are
 Typically the parallelism would be set in the Terraform cloud workspace environment variables section using the variable name "TFE_PARALLELISM" and value of "1", however this variable is NOT used by Terraform Cloud Agents.  Instead the variables "TF_CLI_ARGS_plan" and "TF_CLI_ARGS_apply" must be used with a value of "-parallelism=1"
 
 
-*October 2021* Due to an issue with the Terraform Provider (version 1.0.0) and DCNM API (11.5(3)) the "dcnm_network" resource will not deploy Layer 3 SVIs.  This is due to a defaul parameter not being correctly set in the API call.  Instead, the Network will be deployed as if the template has the "Layer 2 Only" checkbox set.
+*October 2021* 
+Due to an issue with the Terraform Provider (version 1.0.0) and DCNM API (11.5(3)) the "dcnm_network" resource will not deploy Layer 3 SVIs.  This is due to a defaul parameter not being correctly set in the API call.  Instead, the Network will be deployed as if the template has the "Layer 2 Only" checkbox set.
 
 There are two workarouds for this
 1. After deploying the network(s), edit the network from the DCNM GUI then immediately save.  This will set the correct default parameters and these networks can be re-deployed.
@@ -137,7 +138,7 @@ If successfully executed, the Terraform plan will result in the following config
   * Anycast Gateway IPv4 Address/Mask
   * VXLAN VNI ID
   * VLAN ID
-  
+
 * New Distributed Port Groups for each VXLAN network defined above
   * Name
   * VLAN ID
