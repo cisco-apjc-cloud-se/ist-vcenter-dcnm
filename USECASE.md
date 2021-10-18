@@ -137,7 +137,7 @@ If successfully executed, the Terraform plan will result in the following config
   * Anycast Gateway IPv4 Address/Mask
   * VXLAN VNI ID
   * VLAN ID
-
+  
 * New Distributed Port Groups for each VXLAN network defined above
   * Name
   * VLAN ID
