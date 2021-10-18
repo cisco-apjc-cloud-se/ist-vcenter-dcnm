@@ -1,5 +1,7 @@
 # Intersight Service for Terraform Demo - Basic DCN & VMware Networking Automation
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/cisco-apjc-cloud-se/ist-vcenter-dcnm)
+
 ## Overview
 This is a simpler version of the “Integrated DC Network, Infrastructure & Security Automation” use case that focuses solely on DCNM and vCenter networking automation, specifically the automation of a DCNM-based VXLAN EVPN fabric connecting to a VMware ESXi cluster with a Distributed Virtual Switch.
 
